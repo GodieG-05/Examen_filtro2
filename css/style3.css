@@ -1,0 +1,44 @@
+body{
+    font-family:NeuePlak-Regular,ParaType,Fabriga,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    font-size: 1.2em;
+    padding: 1.8% 5% 1.8% 5%;
+    margin: 3%;
+    background-color: #CDCFDD;
+    border: solid 2px;
+
+}
+
+#principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 2%;
+    gap: 5%;
+}
+
+.review{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    padding-right: 10%;
+}
+header{
+    display: flex;
+    justify-content: end;
+}
+.about{
+    grid-column-start: 2;
+
+}
+@media (max-width: 480px){
+    #principal{
+        display: flex;
+        flex-direction: column;
+    }
+    #principal img{
+        grid-row-start: 1;
+    }
+    .about{
+        grid-row-start: 2;
+    }
+}

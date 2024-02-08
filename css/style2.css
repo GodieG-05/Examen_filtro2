@@ -24,6 +24,9 @@ nav{
 }
 .section__titulo{
     grid-area: titulo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bx-cool{
@@ -76,7 +79,9 @@ a{
     border-radius: 10px;
     background-color: white;
 }
-
+.menu{
+    display: none;
+}
 .confirmar{
     display: flex;
     justify-content: space-between;
@@ -86,7 +91,8 @@ a{
 .confirmo{
     background-color: #889092;
     border-radius: 5px;
-    padding: 2px 2px
+    padding: 2px 2px;
+    cursor: pointer;
 }
 .comprar{
     display: grid;
@@ -96,4 +102,21 @@ a{
     padding:0% 1%; 
     align-items: center;
     background-color: #EAEEEF;
+}
+.grid-item__cantidad{
+    border: solid 1px;
+}
+@media (max-width: 520px){
+    body{
+        grid-template-columns: 1fr;
+        font-size: 0.5;
+    }
+    .menu{
+        display: inline;
+    }
+    nav{
+        display: none;
+    }
+}   main{
+    padding: 1%;
 }

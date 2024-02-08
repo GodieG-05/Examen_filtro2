@@ -24,6 +24,12 @@ nav{
 }
 .section__titulo{
     grid-area: titulo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: none;
 }
 article{
     display: grid;
@@ -125,4 +131,17 @@ p{
         transform: scale(1.5);
     
     }
-}    
+}
+@media (max-width: 520px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    .menu{
+        display: inline;
+    }
+    .dash{
+        display: none;
+    }
+}   main{
+    padding: 1%;
+}

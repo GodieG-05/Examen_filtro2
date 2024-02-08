@@ -1,0 +1,14 @@
+body{
+    padding: 5% 5%;
+    background-color: rgb(237, 239, 250);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section.menu{
+    text-align: center;
+    border: solid 1px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
