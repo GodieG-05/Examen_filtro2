@@ -20,7 +20,7 @@ main{
 }
 nav{
     grid-area: nav;
-    max-width: 0.1fr;
+    min-width: 0.1fr;
 }
 .section__titulo{
     grid-area: titulo;
@@ -28,7 +28,15 @@ nav{
 article{
     display: grid;
     gap:10px;
-    grid-template: repeat(2, 0.5fr) / repeat(auto-fit, minmax(400px, 1fr));
+    grid-template: repeat(2, 0.5fr) / repeat(auto-fit, minmax(275px, 1fr));
+}
+img:hover{
+    animation-name: imagen;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
 }
 .bx-cool{
     background-color: rgb(94, 94, 245); color: white; padding: 3%;
@@ -54,7 +62,7 @@ article{
 }
 .dash{
     font-size: 1.2rem;
-    /* min-width: 400px; */
+    min-width: 190px;
 }
 .dash__titulo{
     padding-top: 5%;
@@ -67,6 +75,9 @@ a{
 .dash__producto:hover{
     background-color: rgb(211, 211, 211);
     border-radius: 10px;
+}
+.dash__resto{
+    padding-top: 25%;
 }
 .grid-item{
     border: solid 1px;
@@ -83,3 +94,35 @@ p{
     display: flex;
     flex-direction: row;
 }
+@keyframes imagen{
+    25%{    
+        border-top: double 3px;
+        border-color: aqua;
+        background-color: aqua;
+        transform: rotate(15deg);
+    }
+    50%{    
+        border-top: double 3px;
+        border-right: double 3px;
+        border-color: blueviolet;
+    }
+    75%{    
+        border-top: double 3px;
+        border-right: double 3px;
+        border-bottom: double 3px;
+        border-color: violet;
+        transform: rotate(-15deg)
+    }
+    100%{
+        border-top: double 3px;
+        border-right: double 3px;
+        border-bottom: double 3px;
+        border-left: double 3px;
+        padding:1%;
+        border-radius: 10px;
+        border-color: springgreen;
+        background-color: violet;
+        transform: scale(1.5);
+    
+    }
+}    

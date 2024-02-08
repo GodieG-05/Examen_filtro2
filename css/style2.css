@@ -25,9 +25,7 @@ nav{
 .section__titulo{
     grid-area: titulo;
 }
-article{
-    
-}
+
 .bx-cool{
     background-color: rgb(94, 94, 245); color: white; padding: 3%;
     border-radius: 10px;
@@ -66,6 +64,9 @@ a{
     background-color: rgb(211, 211, 211);
     border-radius: 10px;
 }
+.dash__resto{
+    padding-top: 25%;
+}
 .grid-item{
     display: flex;
     justify-content: space-around;
@@ -76,3 +77,23 @@ a{
     background-color: white;
 }
 
+.confirmar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.confirmo{
+    background-color: #889092;
+    border-radius: 5px;
+    padding: 2px 2px
+}
+.comprar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 1px;
+    border-radius: 5px;
+    padding:0% 1%; 
+    align-items: center;
+    background-color: #EAEEEF;
+}
